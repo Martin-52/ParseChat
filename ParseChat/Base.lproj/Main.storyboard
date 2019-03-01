@@ -104,14 +104,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVc-l9-T6j">
-                                                    <rect key="frame" x="15" y="25" width="345" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVc-l9-T6j">
+                                                    <rect key="frame" x="23" y="19" width="345" height="33"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="gVc-l9-T6j" secondAttribute="bottom" constant="8" id="0qK-OT-dbG"/>
+                                                <constraint firstItem="gVc-l9-T6j" firstAttribute="trailing" secondItem="aFi-nk-V6k" secondAttribute="trailingMargin" constant="8" id="GR3-0c-viC"/>
+                                                <constraint firstItem="gVc-l9-T6j" firstAttribute="leading" secondItem="aFi-nk-V6k" secondAttribute="leadingMargin" constant="8" id="SHc-BY-KBU"/>
+                                                <constraint firstItem="gVc-l9-T6j" firstAttribute="top" secondItem="aFi-nk-V6k" secondAttribute="topMargin" constant="8" id="ZgP-by-ZVa"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="messageLabel" destination="gVc-l9-T6j" id="rQH-TQ-l9O"/>
